@@ -1,15 +1,15 @@
 package money.practice.tdd.model;
 
-public class Dollar {
+public class Franc {
 
     private int amount;
 
-    public Dollar(int money){
+    public Franc(int money){
         this.amount = money;
     };
 
-    public Dollar times(int multiplier) {
-        return new Dollar(amount*multiplier);
+    public Franc times(int multiplier) {
+        return new Franc(amount*multiplier);
     }
 
     public int getAmount(){
@@ -17,7 +17,7 @@ public class Dollar {
     }
 
     public boolean equals(Object object){
-        Dollar dollar = (Dollar) object;
+        Franc dollar = (Franc) object;
         return amount == dollar.amount;
     }
 
