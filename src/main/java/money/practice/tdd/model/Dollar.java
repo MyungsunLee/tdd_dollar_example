@@ -15,4 +15,10 @@ public class Dollar {
     public int getAmount(){
         return amount;
     }
+
+    public boolean equals(Object object){
+        Dollar dollar = (Dollar) object;
+        return amount == dollar.amount;
+    }
+
 }
