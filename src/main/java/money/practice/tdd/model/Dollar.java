@@ -1,6 +1,6 @@
 package money.practice.tdd.model;
 
-public class Dollar {
+public class Dollar extends Money{
 
     private int amount;
 
@@ -16,9 +16,5 @@ public class Dollar {
         return amount;
     }
 
-    public boolean equals(Object object){
-        Dollar dollar = (Dollar) object;
-        return amount == dollar.amount;
-    }
 
 }
